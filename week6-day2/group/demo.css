@@ -1,0 +1,22 @@
+/* You do not need to add anything but you will need to switch all except for body selector to Bootstrap in this CSS section. */
+
+.row div {
+    color: #fff;
+    background-color: darkblue;
+    border: 1px solid lightgray;
+    margin: 5px 0;
+  }
+  
+  #viewport-size {
+    background: lightblue;
+    font-weight: bold;
+    padding: 5px;
+  }
+  
+  body {
+    margin: 10px;
+  }
+  
+  .container {
+    margin-bottom: 60px;
+  }
