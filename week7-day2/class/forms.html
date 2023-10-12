@@ -15,16 +15,19 @@
 
         <div class="container">
             <form action="/action_page.php">
-                <div class="">
+                <div class="form-group">
                   <label for="email">Email:</label>
-                  <input type="email" class="" id="email" placeholder="Enter email" name="email">
+                  <!-- Add the most basic input control by Bootstrap by adding "form-control", pairing with type -->
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
                 </div>
-                <div class="">
+                <div class="form-group">
+                  <!-- Add the most basic input control by Bootstrap by adding "form-control", pairing with type -->
                   <label for="pwd">Password:</label>
-                  <input type="password" class="" id="pwd" placeholder="Enter password" name="pswd">
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
                 </div>
-                <div class=" form-check">
+                <div class="form-group form-check">
                   <label class="form-check-label">
+                    <!-- "Remember-me" checkbox not required by default -->
                     <input class="form-check-input" type="checkbox" name="remember"> Remember me
                   </label>
                 </div>

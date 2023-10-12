@@ -9,7 +9,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <style>
 	.bs-example{
-    	margin: 100px 60px;
+    	margin: 100px 200px;
     }
 </style>
 <script>
@@ -20,18 +20,20 @@
 </head>
 <body>
 <div class="bs-example"> 
+    <!-- Tooltips rely on the 3rd party library Popper for positioning! You must include popper.min.js before bootstrap.js -->
     <ul class="list-inline">
+        <!-- Notice the small box as the mouse is hovered on the element. You can decide the position as well. -->
         <li class="list-inline-item">
-            <a href="#" data-toggle="" title="Default tooltip">Tooltip</a>
+            <a href="#" data-toggle="tooltip" data-placement="left" title="Left tooltip">Tooltip</a>
         </li>
         <li class="list-inline-item">
-            <a href="#" data-toggle="" title="Another tooltip">Another tooltip</a>
+            <a href="#" data-toggle="tooltip" data-placement="top" title="Top tooltip">Another tooltip</a>
         </li>
         <li class="list-inline-item">
-            <a href="#" data-toggle="" title="A much longer tooltip to demonstrate the max-width of the Bootstrap tooltip.">Large tooltip</a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="A much longer tooltip to demonstrate the max-width of the Bootstrap tooltip.">Large tooltip</a>
         </li>
         <li class="list-inline-item">
-            <a href="#" data-toggle="" title="The last tip!">Last tooltip</a>
+            <a href="#" data-toggle="tooltip" data-placement="right" title="Right tip!">Last tooltip</a>
         </li>
     </ul>
 </div>
