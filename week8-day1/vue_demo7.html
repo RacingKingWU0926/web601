@@ -15,15 +15,26 @@
         <mycomponent2></mycomponent2>
      </div>
      <div id = "component3">
+        <!-- Now, as the `template` property of `mycomponent2` is locally registered in `mycomponent2`, `mycomponent3` is unable to access `template` property of `mycomponent2` -->
         <mycomponent2></mycomponent2>
      </div>
 
 <script>
     var vm1 = new Vue({
-        el: '#component1'
+        el: '#component1',
+        components: {
+            'mycomponent1': {
+                template: '<div><h1>Welcome to VUE Components!</h1></div>'
+            }
+        }
     });
     var vm2 = new Vue({
-        el: '#component2'
+        el: '#component2',
+        components: {
+            'mycomponent2': {
+                template: '<div><p>VUE is interesting!</p></div>'
+            }
+        }
     });
     var vm3 = new Vue({
         el: '#component3'

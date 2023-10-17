@@ -9,11 +9,18 @@
 <body>
 
 <div id="vueapp">
-    
+    <!-- Step 2: call the Vue app -->
+    {{ greeting }}
 </div>
 
 <script>
-
+    // Step 1: create and instantiate a vue instance
+    var app = new Vue({
+        el: "#vueapp",
+        data: {
+            greeting: "Hello World!"
+        }
+    });
 </script>
     
 </body>

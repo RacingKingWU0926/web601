@@ -14,8 +14,10 @@
      <div id = "component2">
         <mycomponent2></mycomponent2>
      </div>
+
+     <!-- This `component3` will share content from `component2`. -->
      <div id = "component3">
-        
+        <mycomponent2></mycomponent2>
      </div>
 
 <script>
@@ -30,6 +32,10 @@
     });
     var vm2 = new Vue({
         el: '#component2'
+    });
+
+    var vm3 = new Vue({
+        el: '#component3'
     });
 </script>
     
