@@ -1,0 +1,12 @@
+
+.mimage, .mdesc {
+    float: left;
+  }
+  .mdesc {
+    width: 500px;
+    padding-left: 15px;
+  }
+  .mdesc span {
+    font-weight: bold;
+  }
+  
