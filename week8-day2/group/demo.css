@@ -1,0 +1,15 @@
+/* No additional/change codes required */
+
+h2 {
+    display:inline;
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:last-child {
+    margin-top: 15px;
+    font-weight: bold;
+}
