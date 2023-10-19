@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="demo.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Vue Mart</h1>
+        <h2>Shopping Cart</h2>
+        <button v-on:click="calcTotal">Get Total</button>
+        <ul>
+            <!-- TASK 1: Display the shopping cart items -using a Vue directive -->
+            <li v-for="item in shoppingCart">{{ item.label}}: ${{ item.cost}}</li>
+
+            <!-- TASK 2: When the button `Get Total` is clicked, Total Cost should display the sum -->
+            <li>Total Cost: ${{totalCost}}</li>
+        </ul>
+    </div>
+
+    <!-- Vue scripts -->
+    <script src="demo.js"></script>
+</body>
+</html>
