@@ -1,0 +1,49 @@
+/* CSS */
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 1.1em;
+   background-color: #94d7e3;
+}
+
+#wrapper h1 {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   margin-top: 0;
+   font-size: 35px;
+}
+
+#wrapper h2 {
+   color: red;
+}
+
+#feature {
+   background-color: yellow;
+}
+
+#feature h2{
+   color: #000;
+}
+
+#wrapper {
+   margin: 0 auto;
+   padding: 10px 30px;
+   width: 500px;
+   background-color: white;
+   height: 100%;
+   border-left: 2px solid black;
+   border-right: 2px solid black;
+}
+
+img {
+   border: 2px solid black;
+}
+
+#pig {
+   position: relative;
+}
+#cow {
+   position: absolute;
+   top: 240px;
+	right: 90px;
+   rotate: 6deg;
+}
