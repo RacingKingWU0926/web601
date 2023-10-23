@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="charset=utf-8">
+    <title>CSS Group Challenge</title>
+    <link rel="stylesheet" type="text/css" href="challenge.css">
+    <!-- Embedded Style Method for header -->
+    <style>
+        /* Reset Default Styles */
+        * {
+            font-family: arial;
+            padding:0; 
+            margin:0;
+        }
+
+        /* Container */
+        #container {
+            width:800px;
+            border: 1px solid #999;
+            background-color:#fff;
+            margin: 20px;
+        }
+
+        /* Header */
+        header {
+            height: 100px;
+        }
+        header, footer {
+            background-color:#babaff;
+        }
+
+        /* Main */
+        main {
+            background-color:#f0f8ff;
+            color: #707070;
+            width: 75%;
+            padding:15px;
+            margin-bottom:5px;
+            float:left;
+        }
+        main h2 {
+            font:normal bold 16px;
+            color: #001a63;
+            margin:10px 0; 
+        }
+
+        /* Global Navigation */
+        .globalNav {
+            float:left; 
+            width:20%; 
+            border:2px solid #00f; 
+            border-bottom:none;
+        }
+        .globalNav ul {
+            background-color:#00f;
+        }
+        .globalNav ul li {
+            display: block;
+            border-bottom:1px solid #fff;
+        }
+        .globalNav ul a { 
+            font-size: 16px; 
+            font-style: bold;
+            color: #fff;
+            text-decoration:none;
+        }
+        .globalNav ul a:hover {
+            background-color:#ff9600;
+        }
+        [src="images/gcimage.png"] {
+            float: right;
+        }
+
+        /* Footer */
+        footer {
+            clear:both;
+        }
+        .footerNav {
+            background:#00f;
+            padding: 5px 0;
+            text-align: center;
+        }
+        .footerNav li {
+            border-left:1px solid #fff;
+            display: inline;
+        }
+        .footerNav li:first-child {
+            border-left:none;
+        }
+        .footerNav a {
+            color:#fff; 
+            font:normal bold 14px;
+            text-decoration:none;
+        }
+        .footerNav a:hover {
+
+        }
+        .copy{
+            color:rgb(25, 39, 87);
+            font-style: italic;
+            font-size: 14px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container is to wrap everything -->
+    <div id="container">
+    <!-- Website Brand -->
+        <header>
+            <img src="images/gclogo.png" width="393" height="96" alt="Challenge Logo">
+        </header>
+        <!-- Main Navigation -->
+        <nav class="globalNav" >
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Products</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content -->
+        <main>
+            <h2>Welcome to CSS Group Challenge</h2>
+            <img class="mainimage" src="images/gcimage.png" width="199" height="145" alt="Woman on computer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <nav class="footerNav">
+                <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Products</a></li> 
+                <li><a href="/">Services</a></li> 
+                <li><a href="/">Contact</a></li> 
+                </ul>
+            </nav>
+            <p class="copy">&copy; Copyright - CSS Group Challenge</p>
+        </footer>
+    </div>
+    <!-- End Container -->
+</body>
+</html>
